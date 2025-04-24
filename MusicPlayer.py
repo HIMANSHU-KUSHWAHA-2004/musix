@@ -151,13 +151,14 @@ window = tk.Tk()
 # Set window size
 window.geometry("1000x600")
 window.config(background="blue")
+window.title("Music Player")
 
 # Create a Frame to hold the Canvas and Scrollbar
 song_frame = tk.Frame(window, bg="yellow")
 song_frame.place(x=550, y=80,height=520,width=450)
 
 heading = tk.Label(window,text="SONGS LIST",font=("Georgia",36, "italic"),bg="#19282F",fg="WHITE",borderwidth=5,relief="raised")
-heading.place(x=550,y=0,width=450)
+heading.place(x=550,y=0,width=450,height=80)
 
 # Create a Canvas widget inside the Frame
 listbox = tk.Listbox(song_frame, bg="black", foreground="white", selectmode=tk.SINGLE,
